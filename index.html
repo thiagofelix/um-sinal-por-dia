@@ -32,7 +32,7 @@
         </footer>
 
         <script type="text/javascript">
-          function displayRandomSignal() {
+          function renderRandomSignal() {
             const NUM_SIGNALS = 5823
             const id = Math.floor(Math.random() * (NUM_SIGNALS - 1) + 1);
             renderSignal(id)
@@ -60,7 +60,7 @@
           }
 
           window.onload = _ => {
-            setTimeout(renderSignal.bind(renderSignal, 2), 1000)
+            setTimeout(renderRandomSignal.bind(renderRandomSignal), 1000)
           }
         </script>
 
